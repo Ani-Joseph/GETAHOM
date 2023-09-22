@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Xanh Mono', monospace;
+}
+    
+.about-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(./images/background\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+a img{
+    width: 45px;
+}
+.logo-name-2{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+    color: black;
+}
+.logo-info-2{
+    width: 200px;
+    display: inline-block;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-top: 0;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: goldenrod;
+    text-decoration: none;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 13px;
+}
+.logo-name{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+    color: black;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(99, 59, 59);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box-2{
+    width: 90%;
+    color: darkgoldenrod;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box-2 h1{
+    font-size: 62px;
+}
+.text-box-2 p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: darkgoldenrod;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: darkgoldenrod;
+    border: 1px solid black;
+    padding: 12px 34px;
+    background: black;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid darkgoldenrod;
+    background: darkgoldenrod;
+    color: black;
+    transition: 1s;
+    
+}
